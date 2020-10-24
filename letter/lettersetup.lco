@@ -1,0 +1,33 @@
+﻿\ProvidesFile{lettersetup.lco}
+
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[english]{babel}
+\RequirePackage{graphicx}
+
+\KOMAoptions{
+    paper=a4,
+    pagenumber=botcenter,
+    fromalign=right,
+    frommobilephone,
+    fromemail,
+    backaddress,
+    foldmarks,
+    enlargefirstpage
+}
+
+\setkomavar{fromname}{Your~Name}
+\setkomavar{fromaddress}{Your~Address}
+\setkomavar{frommobilephone}{Your~Mobile~Phone}
+\setkomavar{mobilephoneseparator}[Mobile:]{~}
+\setkomavar{fromemail}{Your~Mail}
+
+% Include signature
+\setkomavar{signature}{\usekomavar{fromname}}
+
+\setkomafont{backaddress}{\mdseries}
+\setkomafont{fromaddress}{\mdseries}
+\addtokomafont{fromname}{\small}
+\addtokomafont{fromaddress}{\small}
+
+\pagestyle{headings}
