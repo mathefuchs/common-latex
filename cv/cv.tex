@@ -1,0 +1,105 @@
+\documentclass[color=black, style=classic, DIV20]{komacv}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{nth}
+
+% PERSONAL DATA
+\renewcommand*{\title}{CV}
+\renewcommand*{\firstname}{Your }
+\renewcommand*{\familyname}{Name}
+\renewcommand*{\addressstreet}{Your~Street}
+\renewcommand*{\addresscity}{Your~City}
+\renewcommand*{\address}[2]{\addressstreet{#1}\addresscity{#2}}
+\renewcommand*{\phonenr}{Your~Phone}
+\renewcommand*{\email}{Your~Email}
+\renewcommand*{\homepage}{Your~Website}
+
+\setkomafont{firstnamefont}{\fontsize{50}{70}\selectfont}
+
+\newcommand{\main}[1]{\textbf{#1}}
+\newcommand{\website}[1]{\url{#1}}
+\newcommand{\cvpart}[1]{\vspace{-0.45cm}\section{#1}\vspace{-0.12cm}}
+\newcommand{\cvsubpart}[1]{\vspace{-0.15cm}\subsection{#1}\vspace{-0.27cm}}
+
+\newenvironment{cvcontent}{\begin{addmargin}[3.38cm]{0cm}\begin{itemize}\setlength{\itemsep}{-0.07cm}}{\end{itemize}\end{addmargin}\vspace{0.15cm}}
+
+\begin{document}
+\raggedbottom
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvpart{Education}
+
+\cvitem{Jan.~2000\,--\,Present}{\main{Lorem Ipsum}, Berlin}
+\begin{cvcontent}
+\item Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+\item At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\end{cvcontent}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\cvpart{Achievements}
+
+\cvitem{Jan.~2020}{\main{At Vero Eos}, Berlin}
+\begin{cvcontent}
+\item Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+\item Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+\end{cvcontent}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvpart{Relevant Work Experience}
+
+\cvitem{Jan.~2000\,--\,Present}{\main{Stet Clita}, Berlin}
+\begin{cvcontent}
+\item Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+\item Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
+\end{cvcontent}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\cvpart{Computer Skills}
+
+\cvitem{Tool A}{Advanced knowledge}
+\begin{cvcontent}
+\item Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+\item Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.
+\end{cvcontent}
+
+\cvitem{Tool B}{Advanced knowledge}
+\begin{cvcontent}
+\item Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+\item At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+\end{cvcontent}
+
+
+\cvpart{Language skills}
+\cvitem{English}{Native speaker}
+\cvitem{French}{Elementary level (A2)}
+
+%----------------------------------------------------------------------------------------
+%	Interests
+%----------------------------------------------------------------------------------------
+
+\cvpart{Interests and Activities}
+\cvitem{Interest A}{At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.}
+\cvitem{Interest B}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.}
+
+%----------------------------------------------------------------------------------------
+%	References
+%----------------------------------------------------------------------------------------
+
+\cvpart{References}
+\cvitem{}{References available upon request.}
+
+\end{document}
